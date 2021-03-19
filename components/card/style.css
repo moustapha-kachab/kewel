@@ -1,0 +1,110 @@
+/* BUTTON SETTINGS */
+
+    /* COLORS SETTINGS
+    --interactive-color: #4400ff;
+    --text-color: #000000;
+    --primary-color: #7175bd;
+    --secondary-color: #4e148c;
+    --other-color: #ffffff;
+    */
+body{
+    background-color: black;
+}
+/* CARD */
+.card{
+    background-color: black;
+    z-index: 0;
+    border: 0px solid var(--interactive-color);
+    padding: 0px;
+    text-align: center;
+    cursor: pointer;
+}
+.card>*{
+    /*border: 0px solid var(--interactive-color);*/
+    padding: 50px;
+    width: 100%;
+    overflow: hidden;
+}
+.card>img{
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    /*border-bottom: 0px solid var(--interactive-color);*/
+}
+.card>img:hover{
+    width: 150%;
+}
+.card-text{
+    padding: 10px 10px 25px 10px;
+}
+.card-text>*{
+    padding: 10px;
+}
+/* CARD HOVER */
+.card-hover{
+    position: relative;
+    overflow: hidden;
+}
+.card-hover>.card-text{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    top: 0%;
+    left: 0%;
+    transform: scale(0.6);
+    transform-origin: center;
+    background-color: black;
+    opacity: 0;
+    transition: 0.6s ease-in-out;
+}
+.card-hover:hover>.card-text{
+    opacity: 0.9;
+    transform: scale(1);
+}
+.card-hover-left>.card-text{
+    transform: translate(-50%, 0%);
+}
+.card-hove-left:hover>.card-text{
+    transform: translate(-50%, -50%);
+}
+.card-hover-right>.card-text{
+    transform: translate(50%, 0%);
+}
+.card-hove-right:hover>.card-text{
+    transform: translate(-50%, -50%);
+}
+.card-hover-top>.card-text{
+    transform: translate(0%, -50%);
+}
+.card-hove-top:hover>.card-text{
+    transform: translate(-50%, -50%);
+}
+.card-hover-bottom>.card-text{
+    transform: translate(0%, 50%);
+}
+.card-hover-bottom:hover>.card-text{
+    transform: translate(0%, 0%);
+}
+.card-horizontal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card-horizontal>img, .card-horizontal>img:hover{
+    width: 33%;
+}
+.card-horizontal>.card-text{
+    width: 67%;
+}
+@media screen and (max-width: 576px){
+    .card-horizontal>img, .card-horizontal>img:hover{
+        width: 100%;
+    }
+    .card-horizontal>.card-text{
+        width: 100%;
+    }
+}

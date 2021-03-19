@@ -1,0 +1,11 @@
+/* I USE GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oleo+Script+Swash+Caps&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3, h4, h5{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: var(--interactive-color);
+}

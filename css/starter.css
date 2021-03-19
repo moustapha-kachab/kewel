@@ -1,0 +1,28 @@
+html{
+    --interactive-color: #4400ff;
+    --text-color: #000000;
+    --primary-color: #7175bd;
+    --secondary-color: #4e148c;
+    --other-color: #ffffff;
+}
+::after, ::before, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: white;
+}
+a, a:hover{
+    text-decoration: none;
+    color: var(--text-color);
+}
+img{
+    max-width: 100%;
+}
+input{
+    outline: none;
+    border: none;
+}

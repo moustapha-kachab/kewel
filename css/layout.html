@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="starter.css">
+
+    <style>
+        body{
+            background-color: black;
+        }
+        main>div{
+            padding: 25px;
+            border: 2px solid rgb(255, 230, 0);
+            margin-top: 25px;
+        }
+        h1{
+            color: #4400ff;
+            border-bottom: 2px solid#4400ff;
+            margin-top: 25px;
+        }
+        .elm{
+            margin: 0px;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: rgb(255, 230, 0);
+            background-color: #0b002b;
+            color: white;
+            border: 1px solid var(--interactive-color, black);
+            outline: solid 1px #4400ff;
+            cursor: pointer;
+        }
+        .align-elm{
+            position: relative;
+            background-color: #0b002b;
+            height: 300px;
+        }
+        .align-elm> h3{
+            border: 1px solid var(--interactive-color, black);
+            background-color: #0b002b;
+            color: white;
+            padding: 10px;
+            position: absolute;
+            z-index: 100;
+            transform: translateY(-10px) scale(0.7);
+        }
+        .align-elm>div{
+            border: 1px solid white;
+            z-index: 0;
+        }
+        .align-elm>div:nth-child(1){
+            background-color: #320aa0;
+            height: 50px;
+        }
+        .align-elm>div:nth-child(2){
+            height: 80px;
+            background-color: #572ec9;
+        }
+        textarea{
+            background-color: #0b002b;
+            color: white;
+            padding: 25px;
+            border: solid 1px #4400ff;
+            outline: solid 1px #4400ff;
+            cursor: pointer;
+            margin: 25px;
+            margin-bottom: 150px;
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container column">
+
+        <h1>Layout</h1>
+        <!--div.row>div.elm*25>lorem-->
+        <div class="col-11 row row-top">
+            <h2> Grid </h2>
+            <div rows="2" class="elm container">
+                .container
+            </div>
+
+            <div rows="2" class="elm col-12">
+                .col-12
+            </div>
+
+            <div rows="2" class="elm col-6">
+                .col-6
+            </div>
+
+            <div rows="2" class="elm col-6">
+                .col-6
+            </div>
+
+            <div rows="2" class="elm col-5">
+                .col-5
+            </div>
+
+            <div rows="2" class="elm col-2">
+                .col-2
+            </div>
+
+            <div rows="2" class="elm col-5">
+                .col-5
+            </div>
+
+            <div rows="2" class="elm col-4">
+                .col-4
+            </div>
+
+            <div rows="2" class="elm col-4">
+                .col-4
+            </div>
+
+            <div rows="2" class="elm col-4">
+                .col-4
+            </div>
+
+            <div rows="2" class="elm col-3">
+                .col-3
+            </div>
+
+            <div rows="2" class="elm col-3">
+                .col-3
+            </div>
+
+            <div rows="2" class="elm col-3">
+                .col-3
+            </div>
+
+            <div rows="2" class="elm col-3">
+                .col-3
+            </div>
+
+            <div rows="2" class="elm col-2">
+                .col-2
+            </div>
+
+            <div rows="2" class="elm col-2">
+                .col-2
+            </div>
+
+            <div rows="2" class="elm col-2">
+                .col-2
+            </div>
+
+            <div rows="2" class="elm col-2">
+                .col-2
+            </div>
+
+            <div rows="2" class="elm col-2">
+                .col-2
+            </div>
+
+            <div rows="2" class="elm col-2">
+                .col-2
+            </div>
+
+            <div rows="2" class="elm col-1">
+                .col-1
+            </div>
+
+            <div rows="2" class="elm col-1">
+                .col-1
+            </div>
+
+            <div rows="2" class="elm col-1">
+                .col-1
+            </div>
+
+            <div rows="2" class="elm col-1">
+                .col-1
+            </div>
+
+            <div rows="2" class="elm col-1">
+                .col-1
+            </div>
+
+            <div rows="2" class="elm col-1">
+                .col-1
+            </div>
+
+            <div rows="2" class="elm col-1">
+                .col-1
+            </div>
+
+            <div rows="2" class="elm col-1">
+                .col-1
+            </div>
+
+            <div rows="2" class="elm col-1">
+                .col-1
+            </div>
+
+            <div rows="2" class="elm col-1">
+                .col-1
+            </div>
+
+            <div rows="2" class="elm col-1">
+                .col-1
+            </div>
+
+            <div rows="2" class="elm col-1">
+                .col-1
+            </div>
+
+            <div rows="2" class="elm col-11">
+                .col-11
+            </div>
+
+            <div rows="2" class="elm col-1">
+                .col-1
+            </div>
+
+            <div rows="2" class="elm col-8">
+                .col-8
+            </div>
+
+            <div rows="2" class="elm col-4">
+                .col-4
+            </div>
+
+            <div rows="2" class="elm col-3">
+                .col-3
+            </div>
+
+            <div rows="2" class="elm col-9">
+                .col-9
+            </div>
+
+            <div rows="2" class="elm col-xl-4 col-lg-6 col-md-8 col-sm-10 col-12">
+                col-xl-2 col-lg-4 col-md-6 col-sm-8 col-10
+            </div>
+            
+            <h3 class="container" > (Same breakpoints (sm, md, lg, xl) and usage than Bootstrap) </h3>
+
+        </div>
+
+
+        <div class="col-11 column">
+
+            <h2>Align</h2>
+
+            <div class="align-elm row container">
+                <div class="col-2"></div>
+                <div class="col-1"></div>
+                <h3>.row</h3>
+            </div>
+
+<textarea cols="50" rows="5">
+    <div class="container row">
+        <div class="col-2"></div>
+        <div class="col-1"></div>
+    </div>  
+</textarea>
+
+            <div class="align-elm column container">
+                <div class="col-2"></div>
+                <div class="col-1"></div>
+                <h3>.column</h3>
+            </div>
+
+<textarea cols="50" rows="5">
+    <div class="container column">
+        <div class="col-2"></div>
+        <div class="col-1"></div>
+    </div>  
+</textarea>
+
+            <div class="align-elm row row-left container">
+                <div class="col-2"></div>
+                <div class="col-1"></div>
+                <h3>.row .row-left</h3>
+            </div>
+
+<textarea cols="50" rows="5">
+    <div class="container row row-left">
+        <div class="col-2"></div>
+        <div class="col-1"></div>
+    </div>  
+</textarea>
+
+
+            <div class="align-elm row row-right container">
+                <div class="col-2"></div>
+                <div class="col-1"></div>
+                <h3>.row .row-right</h3>
+            </div>
+
+<textarea cols="50" rows="5">
+    <div class="container row row-right">
+        <div class="col-2"></div>
+        <div class="col-1"></div>
+    </div>  
+</textarea>
+
+
+            <div class="align-elm row row-top container">
+                <div class="col-2"></div>
+                <div class="col-1"></div>
+                <h3>.row .row-top</h3>
+            </div>
+
+<textarea cols="50" rows="5">
+    <div class="container row row-top">
+        <div class="col-2"></div>
+        <div class="col-1"></div>
+    </div>  
+</textarea>
+
+
+            <div class="align-elm row row-bottom container">
+                <div class="col-2"></div>
+                <div class="col-1"></div>
+                <h3>.row .row-bottom</h3>
+            </div>
+
+<textarea cols="50" rows="5">
+    <div class="container row row-bottom">
+        <div class="col-2"></div>
+        <div class="col-1"></div>
+    </div>  
+</textarea>
+
+
+        <div class="align-elm column column-left container">
+            <div class="col-2"></div>
+            <div class="col-1"></div>
+            <h3>.column .column-left</h3>
+        </div>
+
+<textarea cols="50"rows="5">
+<div class="container column column-left">
+    <div class="col-2"></div>
+    <div class="col-1"></div>
+</div>  
+</textarea>
+
+
+        <div class="align-elm column column-right container">
+            <div class="col-2"></div>
+            <div class="col-1"></div>
+            <h3>.column .column-right</h3>
+        </div>
+
+<textarea cols="50"rows="5">
+<div class="container column column-right">
+    <div class="col-2"></div>
+    <div class="col-1"></div>
+</div>  
+</textarea>
+
+
+        <div class="align-elm column column-top container">
+            <div class="col-2"></div>
+            <div class="col-1"></div>
+            <h3>.column .column-top</h3>
+        </div>
+
+<textarea cols="50"rows="5">
+<div class="container column column-top">
+    <div class="col-2"></div>
+    <div class="col-1"></div>
+</div>  
+</textarea>
+
+
+        <div class="align-elm column column-bottom container">
+            <div class="col-2"></div>
+            <div class="col-1"></div>
+            <h3>.column .column-bottom</h3>
+        </div>
+
+<textarea cols="50"rows="5">
+<div class="container column column-bottom">
+    <div class="col-2"></div>
+    <div class="col-1"></div>
+</div>  
+</textarea>
+
+
+        <div class="align-elm column column-bottom column-right container">
+            <div class="col-2"></div>
+            <div class="col-1"></div>
+            <h3>.column .column-bottom .column-right</h3>
+        </div>
+
+<textarea cols="50"rows="7">
+/*Feel free to mix properties*/
+
+<div class="container column column-bottom column-right">
+    <div class="col-2"></div>
+    <div class="col-1"></div>
+</div>  
+</textarea>
+
+
+        <div class="align-elm row row-top row-right container">
+            <div class="col-2"></div>
+            <div class="col-1"></div>
+            <h3>.row .row-top .row-right</h3>
+        </div>
+
+<textarea cols="50"rows="7">
+/*Feel free to mix properties*/
+
+<div class="container row row-top row-right">
+    <div class="col-2"></div>
+    <div class="col-1"></div>
+</div>  
+</textarea>
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </main>
+
+</body>
+</html>
